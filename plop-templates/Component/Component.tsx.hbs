@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./{{pascalCase name}}.module.scss";
+import React from 'react';
+import { Styled{{pascalCase name}} } from './{{pascalCase name}}.styled';
 
-export const {{pascalCase name}} = () => (
-  <React.Fragment>
-    <div className={ styles.{{pascalCase name}} }>
-      
-    </div>
-  </React.Fragment>
-);
+export const {{pascalCase name}} = () => {
+  return (
+    <Styled{{pascalCase name}}>
+      {{pascalCase name}}
+    </Styled{{pascalCase name}}>
+  );
+};

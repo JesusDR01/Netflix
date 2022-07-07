@@ -1,12 +1,12 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import NextLink from "next/link";
-import HomeCar from "../../public/images/home_car.png";
+import { GlobalStyles } from "src/GlobalStyles";
 import Nav from "../components/Nav";
 
 const Home: NextPage = () => {
     return (
         <>
+        <GlobalStyles/>
             <Head>
                 <title>Netflix Demo JesusDR</title>
             </Head>

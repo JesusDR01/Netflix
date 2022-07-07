@@ -26,18 +26,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.module.scss',
-        templateFile: 'plop-templates/Component/Component.module.scss.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}-tablet.module.scss',
-        templateFile: 'plop-templates/Component/Component-tablet.module.scss.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}-desktop.module.scss',
-        templateFile: 'plop-templates/Component/Component-desktop.module.scss.hbs',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.styled.tsx',
+        templateFile: 'plop-templates/Component/Component.styled.tsx.hbs',
       },
       {
         type: 'add',
@@ -70,18 +60,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/pages/{{camelCase name}}/{{pascalCase name}}.module.scss',
-        templateFile: 'plop-templates/Page/Page.module.scss.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/pages/{{camelCase name}}/{{pascalCase name}}-tablet.module.scss',
-        templateFile: 'plop-templates/Page/Page-tablet.module.scss.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/pages/{{camelCase name}}/{{pascalCase name}}-desktop.module.scss',
-        templateFile: 'plop-templates/Page/Page-desktop.module.scss.hbs',
+        path: 'src/pages/{{camelCase name}}/{{pascalCase name}}.styled.tsx',
+        templateFile: 'plop-templates/Page/Page.styled.tsx.hbs',
       },
       {
         type: 'add',

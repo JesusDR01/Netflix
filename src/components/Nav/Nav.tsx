@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styles from "./Nav.module.scss";
 import Image from "next/image";
 import NextLink from "next/link";
+import React, { useState } from "react";
+import { StyledNav } from "./Nav.styled";
 
 export const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,9 +9,9 @@ export const Nav = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <nav className={styles.nav}>
-            <div className={styles["logo-menu-wrapper"]}>
-                <div className={styles["image-wrapper"]}>
+        <StyledNav>
+            <div className={"logo-menu-wrapper"}>
+                <div className={"image-wrapper"}>
                     <Image
                         src="/assets/hamburger.gif"
                         alt="menu"
@@ -23,55 +23,49 @@ export const Nav = () => {
                 </div>
 
                 <div
-                    className={styles["navigation-slider-background"]}
+                    className={"navigation-slider-background"}
                     style={{ display: menuOpen ? "none" : "block" }}
                     onClick={handleMenuOpen}
                 ></div>
                 <div
-                    className={`${styles["navigation-slider"]} ${menuOpen || styles["slide-open"]}`}
+                    className={`${"navigation-slider"} ${menuOpen || "slide-open"}`}
                 >
-                    <ol className={styles["navigation-slider-settings"]}>
-                        <li className={styles["navigation-slide-profile"]}>
-                                <Image
-                                    className={styles["navigation-slide-profile-avatar"]}
-                                    src="/assets/nav/profile.png"
-                                    alt="menu"
-                                    width={32}
-                                    height={32}
-                                    quality={70}
-                                />
-                            <p className={styles["navigation-slide-profile-link"]}>
-                                <span className={styles["navigation-slide-profile-name"]}>
+                    <ol className={"navigation-slider-settings"}>
+                        <li className={"navigation-slide-profile"}>
+                            <Image
+                                className={"navigation-slide-profile-avatar"}
+                                src="/assets/nav/profile.png"
+                                alt="menu"
+                                width={32}
+                                height={32}
+                                quality={70}
+                            />
+                            <p className={"navigation-slide-profile-link"}>
+                                <span className={"navigation-slide-profile-name"}>
                                     Juan
                                 </span>
-                                <span className={styles["navigation-slide-profile-change"]}>
+                                <span className={"navigation-slide-profile-change"}>
                                     Cambiar perfiles
                                 </span>
                             </p>
                         </li>
-                        <li>
-                            Cuenta
-                        </li>
-                        <li>
-                            Centro de ayuda
-                        </li>
-                        <li>
-                            Cerrar sesión en Netflix
-                        </li>
+                        <li>Cuenta</li>
+                        <li>Centro de ayuda</li>
+                        <li>Cerrar sesión en Netflix</li>
                     </ol>
                 </div>
 
                 <NextLink href="/">
-                    <a className={styles.logo} />
+                    <a className={"logo"} />
                 </NextLink>
             </div>
             <form>
                 <input
                     type="text"
                     placeholder="Buscar"
-                    className={styles["navigation-search-input"]}
+                    className={"navigation-search-input"}
                 />
             </form>
-        </nav>
+        </StyledNav>
     );
 };

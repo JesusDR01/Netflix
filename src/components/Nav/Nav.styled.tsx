@@ -1,6 +1,11 @@
-@import "src/sass/variables";
+import styled from "styled-components";
 
-.nav {
+export const StyledNav = styled.nav`
+    @font-face {
+        font-family: "nf-icon";
+        src: local("nf-icon"), url("/fonts/nf-icon-v1-93.woff") format("opentype");
+    }
+
     width: 100%;
     height: 70px;
     background: url("/assets/nav/header_gradient.png") repeat-x;
@@ -13,7 +18,7 @@
     height: 50px;
     padding: 20px;
 
-    ol{
+    ol {
         list-style: none;
     }
 
@@ -69,7 +74,7 @@
         padding: 10px 0;
         border-bottom: 1px solid #333;
         margin-bottom: 5px;
-        li{
+        li {
             margin-bottom: 10px;
             padding-left: 17px;
         }
@@ -85,12 +90,12 @@
             .navigation-slide-profile-link {
                 display: inline-block;
                 margin-left: 8px;
-                span{
+                span {
                     display: block;
                 }
             }
             .navigation-slide-profile-change {
-                font-size: .7em;
+                font-size: 0.7em;
                 font-weight: 400;
             }
         }
@@ -108,11 +113,4 @@
         border: 1px solid #ccc;
         color: #ccc;
     }
-    @media (min-width: $breakpoint-tablet) {
-        @import "Nav-tablet.module.scss";
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-        @import "Nav-desktop.module.scss";
-    }
-}
+`;
