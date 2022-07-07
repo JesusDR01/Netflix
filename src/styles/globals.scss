@@ -1,0 +1,21 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #141414;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "nf-icon";
+  src: local("nf-icon"), url("/fonts/nf-icon-v1-93.woff") format("opentype");
+}

@@ -1,0 +1,12 @@
+@import "src/sass/variables";
+
+.BigCarousel {
+  margin-bottom: 24px;
+  @media (min-width: $breakpoint-tablet) {
+    @import "BigCarousel-tablet.module.scss";
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    @import "BigCarousel-desktop.module.scss";
+  }
+}

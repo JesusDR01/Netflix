@@ -1,0 +1,11 @@
+@import "src/sass/variables";
+
+.{{pascalCase name}} {
+  @media (min-width: $breakpoint-tablet) {
+    @import "{{pascalCase name}}-tablet.module.scss";
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    @import "{{pascalCase name}}-desktop.module.scss";
+  }
+}
