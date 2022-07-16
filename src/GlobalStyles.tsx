@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-* {
-    box-sizing: border-box;
-}
+
 body {
 margin: 0;
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -17,23 +15,46 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #01b2ff;
-    border: 5px solid transparent;
-    border-radius: 11px;
-    background-clip: content-box;
-}
-
-::-webkit-scrollbar {
-    width: 18px;
-}
-
-::-webkit-scrollbar-track {
-    background-color:#0f171e ;
-}
 
 html {
     scroll-behavior: smooth;
     
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #141414;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "nf-icon";
+  src: url("/fonts/nf-icon-v1-93.woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("/fonts/NetflixSans_W_Rg.woff2");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("/fonts/NetflixSans_W_Md.woff2");
+}
+
+ul,li{
+  list-style: none;
+}
+
 `;

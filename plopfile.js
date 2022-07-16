@@ -92,12 +92,6 @@ module.exports = (plop) => {
         path: 'src/hooks/{{camelCase name}}.ts',
         templateFile: 'plop-templates/hook.ts.hbs',
       },
-      {
-        type: 'add',
-        path: 'src/hooks/index.ts',
-        templateFile: 'plop-templates/injectable-index.ts.hbs',
-        skipIfExists: true,
-      },
     ],
   });
 };
