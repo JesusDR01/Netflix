@@ -20,7 +20,7 @@ export const StyledDesktopNav = styled.nav<StyledDesktopNavProps>`
 
     .main-header {
         width: 100%;
-        height: 68px;
+        height: 60px;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
         align-items: center;
         display: flex;

@@ -4,7 +4,7 @@ type StyledCarouselProps = {
     isTop: boolean;
 };
 export const StyledCarousel = styled.div<StyledCarouselProps>`
-    overflow: visible;
+    overflow: hidden;
     .mySwiper {
         overflow: visible;
         z-index: 0;
@@ -79,6 +79,7 @@ export const StyledCarousel = styled.div<StyledCarouselProps>`
     }
 
     @media screen and (min-width: 768px) {
+        overflow: visible;
         .mySwiper {
             .swiper-button-next,
             .swiper-button-prev {
