@@ -14,7 +14,7 @@ export const StyledTitle = styled.h2`
             display: none;
             vertical-align: bottom;
             font-size: 0.9vw;
-            width: 109px;
+            width: 139px;
             overflow: visible;
             color: #54b9c5;
             position: relative;
