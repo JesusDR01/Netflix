@@ -34,6 +34,17 @@ export const StyledCarousel = styled.div<StyledCarouselProps>`
             margin-right: 3px;
             cursor: pointer;
             background-size: cover;
+            overflow: hidden;
+            box-sizing: border-box;
+
+            &:hover,
+            &:active {
+                box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+                img {
+                    transform: scale(1.1);
+                    z-index: 0;
+                }
+            }
         }
 
         .swiper-button-next,
@@ -81,6 +92,19 @@ export const StyledCarousel = styled.div<StyledCarouselProps>`
     @media screen and (min-width: 768px) {
         overflow: visible;
         .mySwiper {
+            .swiper-slide {
+                overflow: visible;
+
+                &:hover,
+                &:active {
+                    box-shadow: initial;
+                    img {
+                        transform: inherit;
+                        z-index: 0;
+                    }
+                }
+            }
+
             .swiper-button-next,
             .swiper-button-prev {
                 display: block;
@@ -95,53 +119,6 @@ export const StyledCarousel = styled.div<StyledCarouselProps>`
                 &::after {
                     right: 0;
                     transform: rotate(180deg) translateX(15px) scale(0.6);
-                }
-            }
-        }
-    }
-`;
-
-export interface IInputWrapperProps {
-    mainImage: string;
-    isTop: boolean;
-    children?: JSX.Element | JSX.Element[];
-}
-
-export const StyledSwiperSlideContent = styled.div<IInputWrapperProps>`
-    .fallback-text-container {
-        background-color: #222;
-        background-image: linear-gradient(transparent, #000);
-        bottom: 0;
-        height: 96%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        max-width: 237px;
-        right: 0;
-        z-index: -1;
-    }
-    @media screen and (min-width: 768px) {
-        display: ${({ isTop }) => (isTop ? `flex` : "block")};
-        .top-wrapper,
-        .top-wrapper img {
-            height: 26px;
-            overflow: visible;
-            padding: 37.714286% 0%;
-            position: relative;
-            width: 81%;
-            top: -77px;
-            left: 2vw;
-        }
-        &:hover, .mini-modal:hover {
-            .mini-modal {
-                opacity: 1;
-                width: 352px;
-                left: -67px;
-                top: -68px;
-                transform: scale(1);
-                pointer-events: all;
-                .previewModal-boxart {
-                    background-image: ${({ mainImage }) => mainImage && `url(${mainImage})`};
                 }
             }
         }

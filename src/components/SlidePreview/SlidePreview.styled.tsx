@@ -7,13 +7,13 @@ type StyledSlidePreviewProps = {
 export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
     color: white;
     position: absolute;
-    transform: scale(0.616);
-    width: 352px;
-    left: -67px;
-    top: -210px;
+    transform: scale(0.75);
+    width: 338px;
+    left: -41px;
+    top: -48px;
     z-index: 3;
     box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
-    transition: transform 0.7s, opacity 0s;
+    transition: transform 0.5s ease-in-out, opacity .5s ease-in;
     opacity: 0;
     pointer-events: none;
 
@@ -82,7 +82,7 @@ export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
                 }
                 .play {
                     &:hover {
-                        background-color: #e6e6e6 ;
+                        background-color: #e6e6e6;
                     }
                 }
                 .like {
@@ -175,13 +175,13 @@ export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
                             font-size: 1.28vw;
                         }
                         .evidence-separator {
-                            width: 7px ;
-                            height: 6px ;
-                            display: inline-block ;
-                            background: #646464 ;
-                            border-radius: 23px ;
-                            vertical-align: middle ;
-                            margin: 6px ;
+                            width: 7px;
+                            height: 6px;
+                            display: inline-block;
+                            background: #646464;
+                            border-radius: 23px;
+                            vertical-align: middle;
+                            margin: 6px;
                         }
                     }
                 }

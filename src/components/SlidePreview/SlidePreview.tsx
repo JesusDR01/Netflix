@@ -12,7 +12,9 @@ export const SlidePreview = ({
         <StyledSlidePreview className="mini-modal" mainImage={media.img} isTop={isTop}>
             <div className="preview">
                 <div className="videoMerchPlayer-boxart-wrapper">
-                    <div className="previewModal-boxart"></div>
+                    <div className="previewModal-boxart">
+                        <img src={media.img} />
+                    </div>
 
                     <div className="previewModal-info">
                         <div className="buttonControls-container">

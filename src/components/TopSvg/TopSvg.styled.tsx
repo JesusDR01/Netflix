@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const StyledTopSvg = styled.svg`
-    height: 26px;
+    border: 1px solid transparent;
+    margin: 0 -1px;
     overflow: visible;
-    padding: 37.714286% 0%;
-    position: relative;
-    width: 81%;
-    top: -77px;
-    left: 3vw;
+    width: 50%;
+    transform: scale(1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
 `;
