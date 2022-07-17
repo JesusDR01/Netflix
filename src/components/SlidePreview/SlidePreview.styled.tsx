@@ -34,6 +34,13 @@ export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
             height: 192px;
             left: 0;
             top: 0;
+            display:flex;
+            align-items: center;
+            width:  ${({ isTop }) => (isTop ? "40%" : "100%")}; 
+            margin: auto;
+            img{
+                width: 100%;
+            }
         }
 
         .previewModal-info {
