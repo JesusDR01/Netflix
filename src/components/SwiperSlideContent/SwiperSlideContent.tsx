@@ -19,7 +19,7 @@ export const SwiperSlideContent = ({
         <StyledSwiperSlideContent mainImage={media.img} isTop={isTop}>
             <>
                 {isTop && <TopSvg rank={idx} />}
-                <img src={media.img} width="237px" height="133px" />
+                <img src={media.img} width="237px" height="133px" className="slider-img" />
                 {!isTop && <div className="fallback-text-container"></div>}
                 <SlidePreview media={media} isTop={isTop} />
             </>

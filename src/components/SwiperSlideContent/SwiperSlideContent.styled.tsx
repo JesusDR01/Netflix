@@ -27,7 +27,7 @@ const isTopStyles = `
 `;
 
 export const StyledSwiperSlideContent = styled.div<StyledSwiperSlideContentProps>`
-    img {
+    .slider-img {
         box-sizing: border-box;
         display: inline-block;
         overflow: hidden;
