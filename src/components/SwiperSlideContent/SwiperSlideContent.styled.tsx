@@ -40,6 +40,7 @@ export const StyledSwiperSlideContent = styled.div<StyledSwiperSlideContentProps
         padding: 0px;
         position: relative;
         max-width: 100%;
+        min-height: 135px;
     }
     .fallback-text-container {
         background-color: #222;
