@@ -14,7 +14,7 @@ const isTopStyles = `
     border-radius: 0.2vw;
     width: 100%;
 
-    img {
+    .slider-img {
         bottom: 0;
         height: 100%;
         left: auto;
