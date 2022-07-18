@@ -3,7 +3,5 @@ module.exports = {
   images: {
     domains: ['nflxso.net'],
   },
-  experimental:{
-    styledComponents: true
-  }
+  styledComponents: true
 };
