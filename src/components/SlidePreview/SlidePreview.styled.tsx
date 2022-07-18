@@ -13,7 +13,7 @@ export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
     top: -48px;
     z-index: 3;
     box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
-    transition: transform 0.5s ease-in-out, opacity .5s ease-in;
+    transition: transform 0.3s ease-in 200ms, opacity .3s ease-in 200ms;
     opacity: 0;
     pointer-events: none;
 
@@ -177,13 +177,14 @@ export const StyledSlidePreview = styled.div<StyledSlidePreviewProps>`
 
                     .evidence-item {
                         display: flex;
+                        align-items: center;
                         padding-right: 0.5vw;
                         .evidence-text {
                             font-size: 1.28vw;
                         }
                         .evidence-separator {
-                            width: 7px;
-                            height: 6px;
+                            width: 5px;
+                            height: 5px;
                             display: inline-block;
                             background: #646464;
                             border-radius: 23px;

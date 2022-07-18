@@ -14,9 +14,6 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
                         rel="stylesheet"
                     />
-
-                    {/* Scripts */}
-                    <script type="text/javascript" src="/static/GoogleTagManager.js" async></script>
                 </Head>
                 <body>
                     <noscript>
